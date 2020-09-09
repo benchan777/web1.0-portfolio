@@ -1,0 +1,97 @@
+/* custom font */
+@font-face {
+    font-family: marckscript-regular;
+    src: url(fonts/MarckScript-Regular.ttf);
+}
+
+/* styles for the entire webpage */
+body {
+    background-color: rgb(22, 44, 58);
+    color: rgb(219, 169, 136);
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+header {
+    font-family: marckscript-regular, fantasy, sans-serif;
+    color: rgb(217, 124, 80);
+}
+
+
+/* Splits nvagation list and rest of the portfolio into two separate flex boxes */
+.flex-container {
+    display: flex;
+
+}
+
+/* Left navigation flex box */
+.flex-item-1 {
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    border-style: solid;
+    border-width: 4px;
+}
+
+/* Remove bullet points and padding from removed bullet points */
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Left side navigation link list */
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 -5px;
+}
+
+/* Left side navigation decorations*/
+.navigation a {
+    color: rgb(22, 44, 58);
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    line-height: 4em;
+    border-radius: 1.5rem;
+    background-color: rgb(217, 124, 80);
+}
+
+/* link click color */
+a:active {
+    color: rgb(219, 169, 136);
+}
+
+/* visited link color */
+a:visited {
+    color: rgb(219, 169, 136);
+}
+
+/* about me margins */
+article > section#about-me > p {
+    margin: 0 20em;
+}
+
+/* font size for picture caption */
+figcaption {
+    font-size: 12px;
+}
+
+/* margins for image and about me section */
+.picture-text {
+    display:flex;
+    margin: 0 25% 0 25%;
+}
+
+/* margins for biography specifically */
+.bio {
+    display: flex;
+    align-items: center;
+}
+
+/* change online presence links from vertical to horizontal */
+.online-presence li {
+    display: inline-block;
+}
